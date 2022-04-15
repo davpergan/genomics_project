@@ -10,9 +10,7 @@ summary(cd)
 
 
 ##SEX##
-sex <- data.frame(cd$SEX)
-table(sex)
-barplot(prop.table(table(sex)))
+barplot(prop.table(table(data.frame(cd$SEX))), main="sex",name=c("male","female"))
 
 ##AGE
 
