@@ -14,11 +14,8 @@ barplot(prop.table(table(data.frame(cd$SEX))), main="sex",name=c("male","female"
 
 ##AGE
 
-age <- data.frame(cd$AGE)
-age <- age[,1]
-hist_age <- hist(age)
-hist_age$counts
-histogram(age,breaks=6)
+histogram(data.frame(cd$AGE)[,1],main="Histogram des ages\n (par tranches de 5 ans)", xlab="age",breaks=6)
+favstats(data.frame(cd$AGE)[,1])
 
 ##HGHT##
 
